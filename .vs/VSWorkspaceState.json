@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MVPSaude",
+    "\\MVPSaude\\Controllers",
+    "\\MVPSaude\\Repository",
+    "\\MVPSaude\\Repository\\Context"
+  ],
+  "SelectedNode": "\\MVPSaude\\Controllers\\PacienteController.cs",
+  "PreviewInSolutionExplorer": false
+}
