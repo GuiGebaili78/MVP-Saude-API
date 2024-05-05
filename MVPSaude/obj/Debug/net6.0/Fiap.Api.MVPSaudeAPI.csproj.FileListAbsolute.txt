@@ -1,0 +1,7 @@
+C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\obj\Debug\net6.0\Fiap.Api.MVPSaudeAPI.csproj.AssemblyReference.cache
+C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\obj\Debug\net6.0\Fiap.Api.MVPSaudeAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\obj\Debug\net6.0\Fiap.Api.MVPSaudeAPI.AssemblyInfoInputs.cache
+C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\obj\Debug\net6.0\Fiap.Api.MVPSaudeAPI.AssemblyInfo.cs
+C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\obj\Debug\net6.0\Fiap.Api.MVPSaudeAPI.csproj.CoreCompileInputs.cache
+C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\obj\Debug\net6.0\Fiap.Api.MVPSaudeAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\obj\Debug\net6.0\Fiap.Api.MVPSaudeAPI.MvcApplicationPartsAssemblyInfo.cache

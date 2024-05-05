@@ -9,23 +9,23 @@ namespace Fiap.Api.MVPSaude.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ConsultaController : Controller
+    public class UsuarioController : Controller
     {
 
-        private ConsultaRepository consultaRepository;
+        private UsuarioRepository usuarioRepository;
 
-        public ConsultaController(DataBaseContext dataBaseContext)
+        public UsuarioController(DataBaseContext dataBaseContext)
         {
 
-            consultaRepository = new ConsultaRepository(dataBaseContext);
+            usuarioRepository = new UsuarioRepository(dataBaseContext);
         }
 
         [HttpGet]
-        public ActionResult<List<ConsultaModel>> Get()
+        public ActionResult<List<UsuarioModel>> Get()
         {
             try
             {
-                var lista = consultaRepository.Listar();
+                var lista = usuarioRepository.Listar();
 
                 if (lista != null)
                 {
@@ -45,15 +45,15 @@ namespace Fiap.Api.MVPSaude.Controllers
 
 
         [HttpGet("{id:int}")]
-        public ActionResult<ConsultaModel> Get([FromRoute] int id)
+        public ActionResult<UsuarioModel> Get([FromRoute] int id)
         {
             try
             {
-                var consultaModel = consultaRepository.Consultar(id);
+                var usuarioModel = usuarioRepository.Consultar(id);
 
-                if (consultaModel != null)
+                if (usuarioModel != null)
                 {
-                    return Ok(consultaModel);
+                    return Ok(usuarioModel);
                 }
                 else
                 {
@@ -68,7 +68,7 @@ namespace Fiap.Api.MVPSaude.Controllers
         }
 
         [HttpPost]
-        public ActionResult<ConsultaModel> Post([FromBody] ConsultaModel consultaModel)
+        public ActionResult<UsuarioModel> Post([FromBody] UsuarioModel usuarioModel)
         {
             if (!ModelState.IsValid)
             {
@@ -77,53 +77,53 @@ namespace Fiap.Api.MVPSaude.Controllers
 
             try
             {
-                consultaRepository.Inserir(consultaModel);
+                usuarioRepository.Inserir(usuarioModel);
 
-                var location = new Uri(Request.GetEncodedUrl() + "/" + consultaModel.ConsultaId);
-                return Created(location, consultaModel);
+                var location = new Uri(Request.GetEncodedUrl() + "/" + usuarioModel.UsuarioId);
+                return Created(location, usuarioModel);
             }
             catch (Exception error)
             {
-                return BadRequest(new { message = $"Não foi possível inserir a consulta. Detalhes: {error.Message}" });
+                return BadRequest(new { message = $"Não foi possível inserir Médico. Detalhes: {error.Message}" });
             }
         }
 
 
         [HttpPut("{id:int}")]
-        public ActionResult<ConsultaModel> Put([FromRoute] int id, [FromBody] ConsultaModel consultaModel)
+        public ActionResult<UsuarioModel> Put([FromRoute] int id, [FromBody] UsuarioModel usuarioModel)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (consultaModel.ConsultaId != id)
+            if (usuarioModel.UsuarioId != id)
             {
                 return NotFound();
             }
 
             try
             {
-                consultaRepository.Alterar(consultaModel);
+                usuarioRepository.Alterar(usuarioModel);
                 return NoContent();
             }
             catch (Exception error)
             {
-                return BadRequest(new { message = $"Não foi possível alterar a consulta. Detalhes: {error.Message}" });
+                return BadRequest(new { message = $"Não foi possível alterar Usuario. Detalhes: {error.Message}" });
             }
         }
 
 
         [HttpDelete("{id:int}")]
-        public ActionResult<ConsultaModel> Delete([FromRoute] int id)
+        public ActionResult<UsuarioModel> Delete([FromRoute] int id)
         {
             try
             {
-                var consultaModel = consultaRepository.Consultar(id);
+                var usuarioModel = usuarioRepository.Consultar(id);
 
-                if (consultaModel != null)
+                if (usuarioModel != null)
                 {
-                    consultaRepository.Excluir(consultaModel);
+                    usuarioRepository.Excluir(usuarioModel);
                     return NoContent();
                 }
                 else

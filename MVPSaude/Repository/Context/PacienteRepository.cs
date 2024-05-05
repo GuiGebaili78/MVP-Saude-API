@@ -5,14 +5,12 @@ namespace Fiap.Api.MVPSaude.Repository.Context
 {
     public class PacienteRepository
     {
-
         private readonly DataBaseContext dataBaseContext;
 
         public PacienteRepository(DataBaseContext ctx)
         {
             dataBaseContext = ctx;
         }
-
 
 
         public IList<PacienteModel> Listar()

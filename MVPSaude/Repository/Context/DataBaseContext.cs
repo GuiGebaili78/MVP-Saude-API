@@ -19,6 +19,9 @@ namespace Fiap.Api.MVPSaude.Repository.Context
         // Propriedade que será responsável pelo acesso a tabela de Consultas
         public DbSet<ConsultaModel> Consulta { get; set; }
 
+        // Propriedade que será responsável pelo acesso a tabela de Usuários
+        public DbSet<UsuarioModel> Usuario { get; set; }
+
 
         public DataBaseContext(DbContextOptions options) : base(options)
         {
