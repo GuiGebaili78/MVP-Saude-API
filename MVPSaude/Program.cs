@@ -4,10 +4,18 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
 var connectionString = builder.Configuration.GetConnectionString("DatabaseConnection");
 builder.Services.AddDbContext<DataBaseContext>(options =>
     options.UseOracle(connectionString).EnableSensitiveDataLogging(true)
 );
+
+// Add services to the container.
+/*
+string mySqlConnection = builder.Configuration.GetConnectionString("DatabaseConnection");
+builder.Services.AddDbContextPool<DataBaseContext>
+    (options => options.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection)));
+*/
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

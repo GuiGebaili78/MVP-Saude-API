@@ -129,3 +129,13 @@ C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\obj\Debug\net6.0\refint\Fiap.Api.MV
 C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\obj\Debug\net6.0\Fiap.Api.MVPSaude.pdb
 C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\obj\Debug\net6.0\Fiap.Api.MVPSaude.genruntimeconfig.cache
 C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\obj\Debug\net6.0\ref\Fiap.Api.MVPSaude.dll
+C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\bin\Debug\net6.0\Humanizer.dll
+C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\bin\Debug\net6.0\System.CodeDom.dll
+C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\bin\Debug\net6.0\System.Text.Json.dll
+C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\bin\Debug\net6.0\MySqlConnector.dll
+C:\workspace\Estudos\C#\MVPSaudeAPI\MVPSaude\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
